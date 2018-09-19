@@ -2,8 +2,7 @@ server {
     listen 80;
     listen [::]:80;
 
-    # TODO: This should be your server name.
-    server_name practice.ironbeard.com;
+    server_name hw02b.sarahchou.online;
 
     location / {
         proxy_pass http://localhost:4790;
@@ -13,6 +12,6 @@ server {
         proxy_pass http://localhost:4790;
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection "upgrade";	 	 
+        proxy_set_header Connection "upgrade";
     }
 }

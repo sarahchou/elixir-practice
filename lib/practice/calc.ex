@@ -14,8 +14,8 @@ defmodule Practice.Calc do
     expr
     |> String.split(~r/\s+/)
     |> parse_float
-    |> add_two
-    # |> :math.sqrt()
+    |> hd
+    |> :math.sqrt()
 
 
     # Hint:

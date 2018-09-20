@@ -2,6 +2,7 @@
   <div class="column">
     <p><%= link "← go back", to: "/" %></p>
     <h2>Arithmetic Results</h2>
+    <p>(I was not able to implement an arithmetic solution)</p>
 
     <p><%= @expr %> = <%= @y %></p>
   </div>

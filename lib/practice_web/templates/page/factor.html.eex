@@ -2,10 +2,12 @@
   <div class="column">
     <p><%= link "← go back", to: "/" %></p>
     <h2>Factor Results</h2>
+    <p> (I was not able to implement factoring, so I display a list of numbers) </p>
 
     <p> Prime Factors of <%= @x %> are: </p>
 
-    <p>y is <%= @y %></p>
+    <p>y = <%= @y %></p>
+
     <p> <%= for key <- @y do %>
       <p><%= key %></p>
     <% end %>

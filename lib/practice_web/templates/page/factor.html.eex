@@ -4,6 +4,11 @@
     <h2>Factor Results</h2>
 
     <p> Prime Factors of <%= @x %> are: </p>
-    <p><%= @y %></p>
+
+    <p>y is <%= @y %></p>
+    <p> <%= for key <- @y do %>
+      <p><%= key %></p>
+    <% end %>
+    </p>
   </div>
 </div>

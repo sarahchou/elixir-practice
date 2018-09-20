@@ -4,14 +4,19 @@ defmodule Practice.Calc do
     num
   end
 
+  def add_two(num) do
+    num + 2
+  end
+
   def calc(expr) do
     # This should handle +,-,*,/ with order of operations,
     # but doesn't need to handle parens.
     expr
-    |> String.split(expr, ["+", "-", "*", "/"])
-    |> hd
+    |> String.split(~r/\s+/)
     |> parse_float
-    |> :math.sqrt()
+    |> add_two
+    # |> :math.sqrt()
+
 
     # Hint:
     # expr

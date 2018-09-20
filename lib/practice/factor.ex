@@ -5,6 +5,11 @@ defmodule Practice.Factor do
   end
 
   def factor(x) do
-    x
+    list = []
+    list = [1 | list]
+    list = [2 | list]
+    list = [3 | list]
+    list = [x | list]
   end
+
 end

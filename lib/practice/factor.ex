@@ -4,9 +4,6 @@ defmodule Practice.Factor do
     num
   end
 
-  #base case
-  #def factor()
-
   # list, accumulator
   def factor(acc, z, list) do
     list = [z | list]
@@ -36,14 +33,5 @@ defmodule Practice.Factor do
       true ->
         list = [z | list]
     end
-
-    # if rem(z, 2) == 0 do
-    #   z = div(z, 2)
-    #   factor(2, z, list)
-    # end
-    # if rem(z, 3) == 0 do
-    #   z = div(z, 3)
-    #   factor(3, z, list)
-    # end
   end
 end

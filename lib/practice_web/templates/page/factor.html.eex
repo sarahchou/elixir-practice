@@ -2,7 +2,7 @@
   <div class="column">
     <p><%= link "← go back", to: "/" %></p>
     <h2>Factor Results</h2>
-    <p> (I was not able to implement factoring, so I display a list of numbers) </p>
+    <p> (I was not able to implement proper prime factoring, but displayed is a list of some factors) </p>
 
     <p> Prime Factors of <%= @x %> are: </p>
 
